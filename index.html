@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>展覽互動集圖</title>
+
+<!-- 引入 Google Fonts 思源明體 (源流明體相似款) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div id="app">
+        <h1>展覽數位集章</h1>
+        <p id="status-text">掃描展場內的 QRCode 來解鎖圖層！</p>
+
+        <div class="image-container" id="combined-area">
+            <img src="assets/REBIRTH_01.png" id="img-1" class="layer hidden">
+            <img src="assets/REBIRTH_02.png" id="img-2" class="layer hidden">
+            <img src="assets/REBIRTH_03.png" id="img-3" class="layer hidden">
+            <img src="assets/REBIRTH_04.png" id="img-4" class="layer hidden">
+            <img src="assets/REBIRTH_05.png" id="img-5" class="layer hidden">
+        </div>
+
+        <button id="download-btn" style="display:none;">下載我的專屬作品</button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
