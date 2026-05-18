@@ -96,7 +96,7 @@ if (shareBtn) {
             try {
                 await navigator.share({
                     title: 'REBIRTH 數位集章',
-                    text: '我剛剛集滿了所有圖層，完成了我的重生！快來教研B2一起看圖文系展重生！',
+                    text: '我剛剛集滿了所有圖層，完成了我的重生！快來教研B2一起看圖文系展－重生 REBIRTH！',
                     url: window.location.origin + window.location.pathname // 分享乾淨不帶 code 參數的原始網址
                 });
             } catch (err) {
