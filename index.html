@@ -2,22 +2,29 @@
 <html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>展覽互動集圖</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>REBIRTH 展覽數位集章</title>
 
-<!-- 引入 Google Fonts 思源明體 (源流明體相似款) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
 
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="noise-overlay"></div>
+
     <div id="app">
-        <h1>展覽數位集章</h1>
-        <p id="status-text">掃描展場內的 QRCode 來解鎖圖層！</p>
+        <h1>重生REBIRTH</h1>
+
+        <p id="status-text">
+            尋找分散在展場中的蝴蝶，蒐集碎片來解鎖限定集章吧！<br>
+            <span class="sub-text">＊完成集章後，可至服務台兌換【貝斯寶兒－蜜桃果茶】一瓶！</span>
+        </p>
 
         <div class="image-container" id="combined-area">
+            <div class="empty-state-placeholder">＋</div>
+
             <img src="assets/REBIRTH_01.png" id="img-1" class="layer hidden">
             <img src="assets/REBIRTH_02.png" id="img-2" class="layer hidden">
             <img src="assets/REBIRTH_03.png" id="img-3" class="layer hidden">
@@ -25,10 +32,10 @@
             <img src="assets/REBIRTH_05.png" id="img-5" class="layer hidden">
         </div>
 
-        <button id="download-btn" style="display:none;">下載我的專屬作品</button>
+        <button id="download-btn" style="display:none;">儲存專屬重生成果</button>
+        <button id="share-btn" style="display:none;">分享給朋友</button>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
