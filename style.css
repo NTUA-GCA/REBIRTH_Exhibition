@@ -103,14 +103,6 @@ h1 {
     box-shadow: inset 0 0 20px rgba(0,0,0,0.3);
 }
 
-/* 預設畫面中央的「＋」提示符號 */
-.empty-state-placeholder {
-    font-size: 2.5rem;
-    color: #55A4C2;        /* 使用亮藍色引導關注 */
-    font-weight: 300;
-    pointer-events: none;
-}
-
 /* 图层绝对定位，重叠的核心设定 */
 .layer {
     width: 100%;
@@ -120,8 +112,8 @@ h1 {
     left: 0;
     object-fit: cover;    /* 確保圖片完美填滿不縮放變形 */
 
-    /* 調整需求 1：將 transition 時間微調，當 hidden 類別移除時，會觸發 1.2 秒的柔和淡入 */
-    transition: opacity 1.2s ease-in-out;
+    /* 調整需求 1：將 transition 時間微調，當 hidden 類別移除時，會觸發 2 秒的柔和淡入 */
+    transition: opacity 2s ease-in-out;
 }
 
 /* 未解鎖的隱藏狀態（淡入效果的基礎：預設透明度為 0） */

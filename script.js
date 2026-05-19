@@ -16,12 +16,6 @@ if (currentCode && !unlocked.includes(currentCode)) {
     }
 }
 
-// 4. 畫面渲染：如果觀眾已經解鎖了至少任一張圖，就把中央預設的「＋」號隱藏起來
-if (unlocked.length > 0) {
-    const placeholder = document.querySelector('.empty-state-placeholder');
-    if (placeholder) placeholder.style.display = 'none';
-}
-
 // 5. 巡迴檢查已解鎖的陣列，將對應的圖片移除 .hidden 類別
 // 調整需求 1：由於 CSS 設定了 transition，當此處移除 'hidden' 時，圖片會自動執行「淡入」
 unlocked.forEach(code => {
